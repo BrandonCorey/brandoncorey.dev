@@ -1,4 +1,4 @@
-import { SkillsType, SkillType } from "../types/skills";
+import { SkillsType, SkillType } from "@/types/skills";
 
 interface CardProps {
   skills: SkillsType;
