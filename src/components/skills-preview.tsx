@@ -11,34 +11,34 @@ interface SkillsData {
 
 const skillsData: SkillsData = {
   Backend: {
-    NodeJS: <devIcons.NodejsOriginal size="50" />,
-    TypeScript: <devIcons.TypescriptOriginal size="50" />,
-    Go: <devIcons.GoOriginal size="50" />,
-    Python: <devIcons.PythonOriginal size="50" />,
-    SQL: <devIcons.PostgresqlPlain size="50" />,
-    MongoDB: <devIcons.MongodbOriginal size="50" />,
-    Express: <devIcons.ExpressOriginal size="50" />,
+    NodeJS: devIcons.NodejsOriginal,
+    TypeScript: devIcons.TypescriptOriginal,
+    Go: devIcons.GoOriginal,
+    Python: devIcons.PythonOriginal,
+    SQL: devIcons.PostgresqlPlain,
+    MongoDB: devIcons.MongodbOriginal,
+    Express: devIcons.ExpressOriginal,
   },
 
   Frontend: {
-    JavaScript: <devIcons.JavascriptOriginal size="50" />,
-    React: <devIcons.ReactOriginal size="50" />,
-    CSS: <devIcons.Css3Original size="50" />,
-    HTML: <devIcons.Html5Original size="50" />,
-    "Tailwind CSS": <devIcons.TailwindcssOriginal size="50" />,
+    JavaScript: devIcons.JavascriptOriginal,
+    React: devIcons.ReactOriginal,
+    CSS: devIcons.Css3Original,
+    HTML: devIcons.Html5Original,
+    "Tailwind CSS": devIcons.TailwindcssOriginal,
   },
 
   Infrastructure: {
-    Git: <devIcons.GitOriginal size="50" />,
-    Docker: <devIcons.DockerPlain size="50" />,
-    Terraform: <devIcons.TerraformOriginal size="50" />,
-    Nginx: <devIcons.NginxOriginal size="50" />,
-    "Amazon EC2": <AWSIcons.EC2 />,
-    "Amazon S3": <AWSIcons.S3 />,
-    "Amazon Lambda": <AWSIcons.Lambda />,
-    "Amazon Kinesis": <AWSIcons.Kinesis />,
-    "Amazon Redshift": <AWSIcons.Redshift />,
-    "Amazon CloudWatch": <AWSIcons.CloudWatch />,
+    Git: devIcons.GitOriginal,
+    Docker: devIcons.DockerPlain,
+    Terraform: devIcons.TerraformOriginal,
+    Nginx: devIcons.NginxOriginal,
+    "Amazon EC2": AWSIcons.EC2,
+    "Amazon S3": AWSIcons.S3,
+    "Amazon Lambda": AWSIcons.Lambda,
+    "Amazon Kinesis": AWSIcons.Kinesis,
+    "Amazon Redshift": AWSIcons.Redshift,
+    "Amazon CloudWatch": AWSIcons.CloudWatch,
   },
 };
 
@@ -46,13 +46,13 @@ export default function SkillsPreview(): JSX.Element {
   const categories = Object.keys(skillsData) as Array<keyof SkillsData>;
   return (
     <section
-      className="w-full bg-gray-100 py-12 md:py-24 lg:py-32 dark:bg-gray-800"
+      className="w-full bg-gray-100 py-12 md:py-24 lg:py-32 dark:bg-zinc-900"
       id="skills"
     >
       <div className="container m-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">
               My Skills
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
