@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
@@ -12,6 +13,10 @@ const config: Config = {
       colors: {
         loaf: "#f1d492",
         loafSecondary: "#D68A2E",
+      },
+      screens: {
+        xs: "380px",
+        ...defaultTheme.screens,
       },
       animation: {
         fadeIn: "fadeIn 1.5s",

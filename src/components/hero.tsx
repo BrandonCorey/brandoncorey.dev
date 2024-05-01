@@ -30,16 +30,16 @@ export default function Hero(): JSX.Element {
             , a self hosted product analytics tool.
           </p>
         </div>
-        <div className="space-x-4">
+        <div className="xs:flex-row flex flex-col items-center justify-center gap-4">
           <Link
-            className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-6 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-opacity-80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-opacity-70 dark:focus-visible:ring-gray-300"
+            className="button-neutral w-fit"
             href="#projects"
             onClick={(e) => scrollToSection(e, "dataloaf")}
           >
             View Projects
           </Link>
           <Link
-            className="button-primary"
+            className="button-primary w-fit"
             href="/Brandon_Corey_Resume_2024.pdf"
             target="_blank"
           >
