@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Projects(): JSX.Element {
+export default function ProjectsPreview(): JSX.Element {
   return (
     <section
       className="w-full justify-center bg-gray-100 py-12 md:py-24 lg:py-32 dark:bg-gray-800"

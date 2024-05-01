@@ -7,4 +7,4 @@ interface Skill {
   Icon: JSX.Element;
 }
 
-export { SkillType, SkillsType };
+export { Skills, Skill };

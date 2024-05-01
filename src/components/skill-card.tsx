@@ -1,7 +1,8 @@
-import { SkillsType, SkillType } from "@/types/skills";
+import { Skills } from "@/types/skills";
+import SkillIcon from "@/components/skill-icon";
 
 interface CardProps {
-  skills: SkillsType;
+  skills: Skills;
   category: "Backend" | "Frontend" | "Infrastructure";
 }
 
@@ -16,7 +17,7 @@ export default function SkillCard({
         <h3 className="text-lg font-semibold">{category}</h3>
         <div className="grid grid-cols-2 gap-4">
           {skillsArr.map((skill) => (
-            <SkillType skillName={skill} Icon={skills[skill]} key={skill} />
+            <SkillIcon skillName={skill} Icon={skills[skill]} key={skill} />
           ))}
         </div>
       </div>

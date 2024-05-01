@@ -3,8 +3,8 @@
 import Header from "./ui/header";
 import Hero from "./hero";
 import DataLoafPreview from "./data-loaf";
-import Projects from "./projects";
-import Skills from "./skills";
+import Projects from "./projects-preview";
+import Skills from "./skills-preview";
 import Contact from "./contact";
 import Footer from "./ui/footer";
 

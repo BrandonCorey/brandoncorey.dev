@@ -1,12 +1,12 @@
 import AWSIcons from "../../static/aws-icons";
 import devIcons from "devicons-react";
 import SkillCard from "./skill-card";
-import { SkillsType } from "@/types/skills";
+import { Skills } from "@/types/skills";
 
 interface SkillsData {
-  Backend: SkillsType;
-  Frontend: SkillsType;
-  Infrastructure: SkillsType;
+  Backend: Skills;
+  Frontend: Skills;
+  Infrastructure: Skills;
 }
 
 const skillsData: SkillsData = {
@@ -42,7 +42,7 @@ const skillsData: SkillsData = {
   },
 };
 
-export default function Skills(): JSX.Element {
+export default function SkillsPreview(): JSX.Element {
   const categories = Object.keys(skillsData) as Array<keyof SkillsData>;
   return (
     <section

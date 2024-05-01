@@ -1,6 +1,6 @@
-import { SkillType } from "@/types/skills";
+import { Skill } from "@/types/skills";
 
-export default function Skill({ skillName, Icon }: SkillType): JSX.Element {
+export default function SkillIcon({ skillName, Icon }: Skill): JSX.Element {
   return (
     <div className="rounded-lg bg-white p-4 dark:bg-gray-950">
       {Icon}
