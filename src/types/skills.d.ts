@@ -1,10 +1,14 @@
+import { FC, ReactNode, SVGProps } from "react";
+
+type IconType = FC<SVGProps>;
+
 interface Skills {
-  [skill: string]: JSX.Element;
+  [skill: string]: IconType;
 }
 
 interface Skill {
   skillName: string;
-  Icon: JSX.Element;
+  Icon: IconType;
 }
 
 export { Skills, Skill };
