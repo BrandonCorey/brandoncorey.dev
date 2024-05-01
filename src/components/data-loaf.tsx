@@ -39,7 +39,7 @@ export default function DataLoafPreview(): JSX.Element {
           />
 
           <Link
-            className="mt-6 inline-flex h-10 w-fit items-center justify-center rounded-md bg-gray-900 px-6 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-opacity-80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-loaf  dark:text-gray-900  dark:hover:bg-opacity-80 dark:focus-visible:ring-gray-300"
+            className="button-primary mt-6 py-4"
             href="https://data-loaf.com/docs/category/case-study"
             target="_blank"
           >

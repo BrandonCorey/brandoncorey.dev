@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         loaf: "#f1d492",
+        loafSecondary: "#D68A2E",
       },
       animation: {
         fadeIn: "fadeIn 1.5s",

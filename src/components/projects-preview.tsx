@@ -47,7 +47,7 @@ export default function ProjectsPreview(): JSX.Element {
             </CardContent>
             <CardFooter>
               <Link
-                className="button"
+                className="button-neutral"
                 href="https://github.com/endpntr/endpntr"
                 target="_blank"
               >
@@ -75,7 +75,7 @@ export default function ProjectsPreview(): JSX.Element {
             </CardContent>
             <CardFooter>
               <Link
-                className="button"
+                className="button-neutral"
                 href="https://github.com/BrandonCorey/ai-gallery"
                 target="_blank"
               >
@@ -104,7 +104,7 @@ export default function ProjectsPreview(): JSX.Element {
             </CardContent>
             <CardFooter>
               <Link
-                className="button"
+                className="button-neutral"
                 href="https://github.com/BrandonCorey/contact-manager"
                 target="_blank"
               >
