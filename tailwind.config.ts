@@ -9,7 +9,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        loaf: "#f1d492",
+      },
+      animation: {
+        fadeIn: "fadeIn 1.5s",
+      },
+
+      keyframes: {
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+      },
     },
     darkMode: "class",
   },

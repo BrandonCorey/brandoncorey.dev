@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.project-preview {
+  @apply mx-auto h-[250px] overflow-hidden rounded-xl object-cover object-center
+}
