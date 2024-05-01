@@ -8,7 +8,7 @@ export default function Hero(): JSX.Element {
       className="flex flex-1 flex-col items-center justify-center py-12 md:py-24 lg:py-32 xl:py-48 dark:bg-zinc-950"
       id="about"
     >
-      <div className="container animate-fadeIn space-y-4 px-4 text-center ease-in md:px-6">
+      <div className="container animate-fadeIn space-y-4 px-4 pt-14 text-center ease-in md:px-6">
         <div className="space-y-2">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl dark:text-white">
             Brandon Corey
@@ -22,7 +22,7 @@ export default function Hero(): JSX.Element {
             Recently, I created{" "}
             <a
               href="https://data-loaf.com"
-              className="font-semibold text-[#d2b573] underline"
+              className="duratio-200 font-semibold text-[#d2b573] underline transition ease-in-out hover:text-loaf"
               target="_blank"
             >
               DataLoaf
@@ -39,7 +39,7 @@ export default function Hero(): JSX.Element {
             View Projects
           </Link>
           <Link
-            className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-loaf px-6 text-sm font-medium shadow-sm transition-colors hover:bg-loaf hover:bg-opacity-80 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-loaf hover:dark:bg-opacity-80 dark:focus-visible:ring-gray-300"
+            className="button-primary"
             href="/Brandon_Corey_Resume_2024.pdf"
             target="_blank"
           >
