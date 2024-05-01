@@ -12,7 +12,9 @@ export default function DataLoafPreview(): JSX.Element {
               DataLoaf
             </h2>
             <p className="mx-auto max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              A self-hosted product analytics platform for developers
+              Recently, I worked on developing DataLoaf. An open source, self
+              hosted product analytics platform for developers that deploys to
+              AWS.
             </p>
           </div>
           <Image
