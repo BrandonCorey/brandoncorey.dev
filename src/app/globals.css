@@ -5,3 +5,11 @@
 .project-preview {
   @apply mx-auto h-[250px] overflow-hidden rounded-xl object-cover object-center
 }
+
+.connect-icons {
+  @apply self-center rounded-lg border border-zinc-900 p-3 transition duration-200 ease-in-out hover:scale-110 dark:border-none dark:bg-zinc-100
+}
+
+.button {
+  @apply inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-6 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-opacity-80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-opacity-70 dark:focus-visible:ring-gray-300
+}
