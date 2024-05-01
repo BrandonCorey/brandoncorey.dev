@@ -54,7 +54,7 @@ export default function Header(): JSX.Element {
         <Link
           className="text-sm font-medium underline-offset-4 hover:underline"
           href="#projects"
-          onClick={(e) => scrollToSection(e, "projects")}
+          onClick={(e) => scrollToSection(e, "dataloaf")}
         >
           Projects
         </Link>
@@ -67,10 +67,10 @@ export default function Header(): JSX.Element {
         </Link>
         <Link
           className="text-sm font-medium underline-offset-4 hover:underline"
-          href="#contact"
-          onClick={(e) => scrollToSection(e, "contact")}
+          href="/Brandon_Corey_Resume_2024.pdf"
+          target="_blank"
         >
-          Contact
+          Resume
         </Link>
       </nav>
       <Button className="lg:hidden" size="icon" variant="outline">
