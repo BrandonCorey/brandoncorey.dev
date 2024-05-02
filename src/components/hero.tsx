@@ -30,7 +30,7 @@ export default function Hero(): JSX.Element {
             , a self hosted product analytics tool.
           </p>
         </div>
-        <div className="xs:flex-row flex flex-col items-center justify-center gap-4">
+        <div className="flex flex-col items-center justify-center gap-4 xs:flex-row">
           <Link
             className="button-neutral w-fit"
             href="#projects"

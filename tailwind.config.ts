@@ -29,8 +29,8 @@ const config: Config = {
         },
       },
     },
-    darkMode: "class",
   },
+  darkMode: "selector",
 };
 
 export default config;
