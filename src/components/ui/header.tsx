@@ -63,7 +63,7 @@ export default function Header(): JSX.Element {
       <Button
         size="icon"
         variant="outline"
-        className="dark:border-zinc-900 dark:focus:border dark:focus:border-zinc-500 dark:focus:bg-zinc-950 dark:active:bg-zinc-900"
+        className="md:hidden dark:border-zinc-900 dark:focus:border dark:focus:border-zinc-500 dark:focus:bg-zinc-950 dark:active:bg-zinc-900"
         onClick={handleSetAltNavShowing}
       >
         <navIcons.MenuIcon className="m-0 h-6 w-6 " />
