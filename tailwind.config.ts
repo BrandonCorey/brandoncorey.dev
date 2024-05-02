@@ -15,7 +15,7 @@ const config: Config = {
         loafSecondary: "#D68A2E",
       },
       screens: {
-        xs: "380px",
+        xs: "374px",
         ...defaultTheme.screens,
       },
       animation: {
