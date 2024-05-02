@@ -15,10 +15,10 @@ export default function DataLoafPreview(): JSX.Element {
               DataLoaf
             </h2>
             <p className="mx-auto max-w-[900px] pb-6 pt-2 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              DataLoaf is an easy to use tool that allows you view metrics like
-              total events, total unique users, and average/median/min/max
-              events per user. It allows allows for filtering among all event
-              and user attributes
+              DataLoaf is an easy to use tool that enables analysis of total
+              events, total unique users, and average/median/min/max events per
+              user sent from your app. It also allows for filtering among all
+              custom event and user attributes.
             </p>
           </div>
           <Image
