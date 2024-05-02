@@ -39,4 +39,5 @@ function MenuIcon(props: any): JSX.Element {
   );
 }
 
-export default { MenuIcon, CodeIcon };
+const exports = { MenuIcon, CodeIcon };
+export default exports;
