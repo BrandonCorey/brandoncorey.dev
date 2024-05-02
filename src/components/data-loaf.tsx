@@ -15,8 +15,10 @@ export default function DataLoafPreview(): JSX.Element {
               DataLoaf
             </h2>
             <p className="mx-auto max-w-[900px] pb-6 pt-2 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Recently, I worked on developing DataLoaf. An open source, self
-              hosted product analytics tool for developers that deploys to AWS.
+              DataLoaf is an easy to use tool that allows you view metrics like
+              total events, total unique users, and average/median/min/max
+              events per user. It allows allows for filtering among all event
+              and user attributes
             </p>
           </div>
           <Image
@@ -26,9 +28,9 @@ export default function DataLoafPreview(): JSX.Element {
             src={dashboardPreview}
             width="1200"
           />
-          <p className="text-md text-gray-500 dark:text-gray-400">
-            DataLoaf allows you to search through a variety of aggregations and
-            filter against completely custom attributes for each event and user.
+          <p className="text-md pt-10 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            Below is a diagram of the current infrastructure supporting
+            DataLoaf.
           </p>
           <Image
             alt="DataLoaf Infrastructure"
