@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import infraPreview from "../../public/dataloaf-infra.png";
-import dashboardPreview from "../../public/dataloaf-dashboard.png";
+import dashboardPreview from "../../public/dataloaf-dashboard-2.png";
 export default function DataLoafPreview(): JSX.Element {
   return (
     <section
@@ -14,19 +14,19 @@ export default function DataLoafPreview(): JSX.Element {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">
               DataLoaf
             </h2>
-            <p className="mx-auto max-w-[900px] pb-6 pt-2 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              DataLoaf is an easy to use tool that enables analysis of total
-              events, total unique users, and average/median/min/max events per
-              user sent from your app. It also allows for filtering among all
-              custom event and user attributes.
+            <p className="mx-auto max-w-[800px] pb-6 pt-2 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              DataLoaf is an easy to use tool that enables product analysis by
+              examining total events and total unique users, as well as
+              average/median/min/max events per-user sent from your app. It also
+              allows for filtering among all custom event and user attributes.
             </p>
           </div>
           <Image
             alt="DataLoaf Dashboard"
             className="mx-auto overflow-hidden rounded-xl object-cover object-center"
-            height="675"
+            height={1000}
             src={dashboardPreview}
-            width="1200"
+            width={1000}
           />
           <p className="text-md pt-10 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
             Below is a diagram of the current infrastructure supporting
@@ -35,9 +35,9 @@ export default function DataLoafPreview(): JSX.Element {
           <Image
             alt="DataLoaf Infrastructure"
             className="mx-auto overflow-hidden rounded-xl object-cover object-center"
-            height="675"
+            height={1000}
             src={infraPreview}
-            width="1200"
+            width={1000}
           />
 
           <Link

@@ -5,10 +5,19 @@ import scrollToSection from "@/lib/smooth-scroll";
 export default function Hero(): JSX.Element {
   return (
     <section
-      className="flex flex-1 flex-col items-center justify-center py-12 md:py-24 lg:py-32 xl:py-48 dark:bg-zinc-950"
+      className="flex flex-1 items-center justify-center py-12 md:py-24 lg:py-32 xl:py-48 dark:bg-zinc-950"
       id="about"
     >
       <div className="container animate-fadeIn space-y-4 px-4 pt-14 text-center ease-in md:px-6">
+        <div className="flex items-center justify-center">
+          <Image
+            alt="Hero"
+            className="rounded-full object-cover"
+            height={428}
+            src="/profile-upscaled.png"
+            width={428}
+          />
+        </div>
         <div className="space-y-2">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl dark:text-white">
             Brandon Corey
@@ -17,12 +26,11 @@ export default function Hero(): JSX.Element {
             Software Engineer | Full-Stack Developer
           </p>
           <p className="mx-auto max-w-[700px] py-5 text-gray-500 md:text-xl dark:text-gray-400">
-            I&apos;m a software engineer with a background in analytics, based
-            in the Boston area. I enjoy working with large amounts of data.
-            Recently, I created{" "}
+            I&apos;m a software engineer based in the greater Boston area with a
+            background in analytics. Recently, I created{" "}
             <a
               href="https://data-loaf.com"
-              className="duratio-200 font-semibold text-[#d2b573] underline transition ease-in-out hover:text-loaf"
+              className="font-semibold text-[#d2b573] underline transition duration-200 ease-in-out hover:text-loaf"
               target="_blank"
             >
               DataLoaf
