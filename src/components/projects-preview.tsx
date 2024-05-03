@@ -22,7 +22,7 @@ export default function ProjectsPreview(): JSX.Element {
               Side Projects
             </h2>
             <p className="mx-auto max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Here are some small side projects I have worked on
+              Here are some small side projects I have worked on.
             </p>
           </div>
         </div>
