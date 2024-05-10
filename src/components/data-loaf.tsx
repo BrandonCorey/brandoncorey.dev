@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import infraPreview from "../../public/dataloaf-infra.png";
-import dashboardPreview from "../../public/dataloaf-dashboard-2.png";
+import dashboardPreview from "../../public/dataloaf-dashboard-final.png";
+import dashboardFeaturePreview from "../../public/dataloaf-dashboard-features-final.png";
+import { Carousel } from "react-responsive-carousel";
+
 export default function DataLoafPreview(): JSX.Element {
   return (
     <section
@@ -21,21 +25,44 @@ export default function DataLoafPreview(): JSX.Element {
               allows for filtering among all custom event and user attributes.
             </p>
           </div>
-          <Image
-            alt="DataLoaf Dashboard"
-            className="mx-auto overflow-hidden rounded-xl object-cover object-center"
-            height={1000}
-            src={dashboardPreview}
-            width={1000}
-          />
-          <p className="text-md pt-10 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+          <Carousel
+            className="w-[1000px]"
+            autoPlay
+            showThumbs={false}
+            interval={15000}
+            infiniteLoop
+          >
+            <div>
+              <Image
+                alt="DataLoaf Dashboard"
+                className="mx-auto w-full overflow-hidden rounded-xl object-cover object-center"
+                src={dashboardPreview}
+              />
+              <p className="legend text-md pt-10 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                The DataLoaf dashboard lets you run multiple queries, all of
+                which can have different events, aggregations, and filters
+              </p>
+            </div>
+
+            <div>
+              <Image
+                alt="DataLoaf Dashboard"
+                className="mx-auto w-full overflow-hidden rounded-xl object-cover object-center"
+                src={dashboardFeaturePreview}
+              />
+              <p className="legend text-md pt-10 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                It lets you dynamically filter events, as well as choose
+                different visualizations
+              </p>
+            </div>
+          </Carousel>
+          <p className="text-md mt-20 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
             Below is a diagram of the current infrastructure supporting
             DataLoaf.
           </p>
           <Image
             alt="DataLoaf Infrastructure"
             className="mx-auto overflow-hidden rounded-xl object-cover object-center"
-            height={1000}
             src={infraPreview}
             width={1000}
           />
