@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -18,7 +19,7 @@ export default function DataLoafPreview(): JSX.Element {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">
               DataLoaf
             </h2>
-            <p className="mx-auto max-w-[800px] pb-6 pt-2 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p className="mx-auto max-w-[800px] pb-6 pt-2 text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
               DataLoaf is an easy to use tool that enables product analysis by
               examining total events and total unique users, as well as average,
               median, min, and max events per-user sent from your app. It also
@@ -26,7 +27,7 @@ export default function DataLoafPreview(): JSX.Element {
             </p>
           </div>
           <Carousel
-            className="w-[1000px]"
+            className="w-full xl:max-w-[1000px]"
             autoPlay
             showThumbs={false}
             interval={15000}
@@ -38,9 +39,9 @@ export default function DataLoafPreview(): JSX.Element {
                 className="mx-auto w-full overflow-hidden rounded-xl object-cover object-center"
                 src={dashboardPreview}
               />
-              <p className="legend text-md pt-10 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                The DataLoaf dashboard lets you run multiple queries, all of
-                which can have different events, aggregations, and filters
+              <p className="legend hidden text-xl text-gray-500 md:block lg:block xl:block dark:text-gray-400">
+                Make multiple queries, with different events, aggregations, and
+                filters
               </p>
             </div>
 
@@ -50,13 +51,13 @@ export default function DataLoafPreview(): JSX.Element {
                 className="mx-auto w-full overflow-hidden rounded-xl object-cover object-center"
                 src={dashboardFeaturePreview}
               />
-              <p className="legend text-md pt-10 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="legend hidden text-xl text-gray-500 md:block lg:block xl:block dark:text-gray-400">
                 It lets you dynamically filter events, as well as choose
                 different visualizations
               </p>
             </div>
           </Carousel>
-          <p className="text-md mt-20 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+          <p className="text-md mt-10 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
             Below is a diagram of the current infrastructure supporting
             DataLoaf.
           </p>
