@@ -41,6 +41,13 @@ export default function Header(): JSX.Element {
         <Link
           className="text-sm font-medium underline-offset-4 hover:underline"
           href="#projects"
+          onClick={(e) => scrollToSection(e, "footer")}
+        >
+          Contact Me
+        </Link>
+        <Link
+          className="text-sm font-medium underline-offset-4 hover:underline"
+          href="#projects"
           onClick={(e) => scrollToSection(e, "dataloaf")}
         >
           Projects
