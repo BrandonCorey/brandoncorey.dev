@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import scrollToSection from "@/lib/smooth-scroll";
-import { LucideGithub, Linkedin, Mail } from "lucide-react";
+import { LucideGithub, Linkedin, Mail, ChevronDown } from "lucide-react";
 
 export default function Hero(): JSX.Element {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -49,12 +48,14 @@ export default function Hero(): JSX.Element {
         <div className="flex flex-col items-center justify-center gap-4 xs:flex-row">
           <button
             className="button-neutral w-fit"
-            onClick={(e) => {
-              scrollToSection(e, "dataloaf");
+            onClick={() => {
               toggleDropdown();
             }}
           >
-            Contact Me
+            <p className="mr-1">Contact Me </p>
+            <p>
+              <ChevronDown />
+            </p>
           </button>
           <Link
             className="button-primary w-fit"
@@ -66,19 +67,36 @@ export default function Hero(): JSX.Element {
           </Link>
         </div>
         {dropdownVisible && (
-          <div className="relative bottom-5 mx-auto w-[338px] dark:text-black">
-            <ul className="flex w-fit flex-col gap-3 rounded-b-md bg-zinc-900 px-8 py-2 text-zinc-200 dark:bg-zinc-800">
-              <li className="flex flex-1">
-                <Linkedin />
-                <p>LinkedIn</p>
-              </li>
-              <li className="flex flex-1">
-                <LucideGithub />
-                <p>GitHub</p>
+          <div className="relative bottom-20 mx-auto w-fit xs:bottom-6 xs:w-[365.4px] dark:text-black">
+            <ul className=" flex w-[151.47px] flex-col gap-5 rounded-b-md bg-zinc-900 px-5 py-5 text-zinc-200 dark:bg-zinc-800">
+              <li>
+                <Link
+                  className="flex flex-1 items-end gap-2 hover:text-loaf"
+                  href="https://linkedin.com/in/brandonmcorey"
+                  target="_blank"
+                >
+                  <Linkedin width={20} />
+                  <p>LinkedIn</p>
+                </Link>
               </li>
               <li>
-                <Mail />
-                <p>Email</p>
+                <Link
+                  className="flex flex-1 items-end gap-2 hover:text-loaf"
+                  href="https://github.com/brandoncorey"
+                  target="_blank"
+                >
+                  <LucideGithub width={20} />
+                  <p>GitHub</p>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="flex flex-1 items-end gap-2 hover:text-loaf"
+                  href={`mailto:bcorey@gmail.com`}
+                >
+                  <Mail width={20} />
+                  <p>Email</p>
+                </Link>
               </li>
             </ul>
           </div>

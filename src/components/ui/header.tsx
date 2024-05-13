@@ -23,7 +23,7 @@ export default function Header(): JSX.Element {
   };
 
   return (
-    <header className="fixed top-0 flex h-14 w-full items-center justify-between border-b border-zinc-300 bg-white px-4 lg:px-6 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white">
+    <header className="fixed top-0 z-50 flex h-14 w-full items-center justify-between border-b border-zinc-300 bg-white px-4 lg:px-6 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white">
       <Link className="flex items-center" href="#">
         <navIcons.CodeIcon className="h-6 w-6" />
         <span className="ml-2 font-semibold">Brandon Corey</span>
@@ -43,7 +43,7 @@ export default function Header(): JSX.Element {
           href="#projects"
           onClick={(e) => scrollToSection(e, "footer")}
         >
-          Contact Me
+          Contact
         </Link>
         <Link
           className="text-sm font-medium underline-offset-4 hover:underline"

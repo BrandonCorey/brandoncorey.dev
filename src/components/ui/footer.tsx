@@ -25,7 +25,7 @@ export default function Connect(): JSX.Element {
         >
           <Linkedin height={30} width={30} />
         </Link>
-        <Link href="mailto:bcorey3660@gmail.com" className="connect-icons">
+        <Link href={`mailto:bcorey3660@gmail.com`} className="connect-icons">
           <Mail height={30} width={30} />
         </Link>
       </div>
