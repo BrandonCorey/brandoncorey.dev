@@ -1,6 +1,5 @@
-import { GithubOriginal } from "devicons-react";
 import Link from "next/link";
-import connectIcons from "../../../static/connect-icons";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 export default function Connect(): JSX.Element {
   return (
@@ -17,17 +16,17 @@ export default function Connect(): JSX.Element {
           className="connect-icons"
           target="_blank"
         >
-          {<GithubOriginal size={30} />}
+          {<Github size={30} />}
         </Link>
         <Link
           href="https://www.linkedin.com/in/brandonmcorey"
           className="connect-icons"
           target="_blank"
         >
-          <connectIcons.LinkedinIcon height={30} width={30} />
+          <Linkedin height={30} width={30} />
         </Link>
         <Link href="mailto:bcorey3660@gmail.com" className="connect-icons">
-          <connectIcons.MailIcon height={30} width={30} />
+          <Mail height={30} width={30} />
         </Link>
       </div>
       <p className="pl-2 text-center text-xs text-gray-500 sm:text-left dark:text-gray-400">
