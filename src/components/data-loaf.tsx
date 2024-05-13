@@ -40,8 +40,8 @@ export default function DataLoafPreview(): JSX.Element {
                 src={dashboardPreview}
               />
               <p className="legend hidden text-xl text-gray-500 md:block lg:block xl:block dark:text-gray-400">
-                Make multiple queries, with different events, aggregations, and
-                filters
+                Make multiple queries with different events, aggregations, and
+                filters.
               </p>
             </div>
 
@@ -52,8 +52,8 @@ export default function DataLoafPreview(): JSX.Element {
                 src={dashboardFeaturePreview}
               />
               <p className="legend hidden text-xl text-gray-500 md:block lg:block xl:block dark:text-gray-400">
-                It lets you dynamically filter events, as well as choose
-                different visualizations
+                Dynamically filter events and users + choose different
+                visualizations!
               </p>
             </div>
           </Carousel>
