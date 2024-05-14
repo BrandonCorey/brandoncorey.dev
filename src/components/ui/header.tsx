@@ -92,6 +92,18 @@ export default function Header(): JSX.Element {
 
         <li className="border-t border-zinc-300 px-12 py-4 transition duration-200 dark:border-zinc-800">
           <Link
+            href="#footer"
+            onClick={(e) => {
+              scrollToSection(e, "footer");
+              handleSetAltNavShowing(e);
+            }}
+            className="block h-full w-full"
+          >
+            Contact
+          </Link>
+        </li>
+        <li className="border-t border-zinc-300 px-12 py-4 transition duration-200 dark:border-zinc-800">
+          <Link
             href="#dataloaf"
             onClick={(e) => {
               scrollToSection(e, "dataloaf");
