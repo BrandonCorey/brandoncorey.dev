@@ -96,7 +96,7 @@ export default function Hero(): JSX.Element {
           </div>
           <Link
             className="button-primary w-fit"
-            href="/Brandon_Corey_Resume_2024.pdf"
+            href="/Brandon_Corey_Resume.pdf"
             target="_blank"
           >
             Download Resume{" "}

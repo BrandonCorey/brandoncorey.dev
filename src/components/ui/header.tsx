@@ -61,7 +61,7 @@ export default function Header(): JSX.Element {
         </Link>
         <Link
           className="text-sm font-medium underline-offset-4 hover:underline"
-          href="/Brandon_Corey_Resume_2024.pdf"
+          href="/Brandon_Corey_Resume.pdf"
           target="_blank"
         >
           Resume
@@ -128,7 +128,7 @@ export default function Header(): JSX.Element {
         </li>
         <li className="border-t border-zinc-300 px-12 py-4 transition duration-200 dark:border-zinc-800">
           <Link
-            href="/Brandon_Corey_Resume_2024.pdf"
+            href="/Brandon_Corey_Resume.pdf"
             target="_blank"
             className="block h-full w-full"
           >

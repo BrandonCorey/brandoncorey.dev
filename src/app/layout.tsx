@@ -26,6 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <meta property="og:title" content="Brandon Corey" />
       <body className={chivo.variable + work_sans.variable}>{children}</body>
     </html>
   );
