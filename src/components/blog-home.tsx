@@ -5,7 +5,7 @@ import { walkSync } from "@/lib/walk-sync";
 const listings = [
   {
     title: "The pitfalls of proficiency",
-    desc: "With predatory educators doing their best to take your money, becoming a proficient developer is harder than it should be",
+    desc: "With predatory educators and a volatile landscape, becoming a proficient developer is hard.",
     previewSrc: "/proficiency.png",
     date: "06/10/2024",
   },
