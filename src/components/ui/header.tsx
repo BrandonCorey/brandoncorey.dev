@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import scrollToSection from "@/lib/smooth-scroll";
 import { Button } from "./button";
 import navIcons from "../../../static/nav-icons";
 import { useState } from "react";
@@ -24,9 +23,11 @@ export default function Header(): JSX.Element {
 
   return (
     <header className="fixed top-0 z-50 flex h-14 w-full items-center justify-between border-b border-zinc-300 bg-white px-4 lg:px-6 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white">
-      <Link className="flex items-center" href="#">
+      <Link className="flex items-center" href="/">
         <navIcons.CodeIcon className="h-6 w-6" />
-        <span className="ml-2 font-semibold">Brandon Corey</span>
+        <span className="ml-2 font-semibold" id="home-button">
+          Brandon Corey
+        </span>
       </Link>
       <nav className="hidden items-center gap-4 sm:gap-6 md:flex">
         <Image
@@ -40,22 +41,19 @@ export default function Header(): JSX.Element {
 
         <Link
           className="text-sm font-medium underline-offset-4 hover:underline"
-          href="#projects"
-          onClick={(e) => scrollToSection(e, "footer")}
+          href="/#footer"
         >
           Contact
         </Link>
         <Link
           className="text-sm font-medium underline-offset-4 hover:underline"
-          href="#projects"
-          onClick={(e) => scrollToSection(e, "dataloaf")}
+          href="/#projects"
         >
           Projects
         </Link>
         <Link
           className="text-sm font-medium underline-offset-4 hover:underline"
-          href="#skills"
-          onClick={(e) => scrollToSection(e, "skills")}
+          href="/#skills"
         >
           Skills
         </Link>
@@ -65,6 +63,12 @@ export default function Header(): JSX.Element {
           target="_blank"
         >
           Resume
+        </Link>
+        <Link
+          className="text-sm font-medium underline-offset-4 hover:underline"
+          href="/blog"
+        >
+          Blog
         </Link>
       </nav>
       <Button
@@ -92,9 +96,8 @@ export default function Header(): JSX.Element {
 
         <li className="border-t border-zinc-300 px-12 py-4 transition duration-200 dark:border-zinc-800">
           <Link
-            href="#footer"
+            href="/#footer"
             onClick={(e) => {
-              scrollToSection(e, "footer");
               handleSetAltNavShowing(e);
             }}
             className="block h-full w-full"
@@ -104,9 +107,8 @@ export default function Header(): JSX.Element {
         </li>
         <li className="border-t border-zinc-300 px-12 py-4 transition duration-200 dark:border-zinc-800">
           <Link
-            href="#dataloaf"
+            href="/#dataloaf"
             onClick={(e) => {
-              scrollToSection(e, "dataloaf");
               handleSetAltNavShowing(e);
             }}
             className="block h-full w-full"
@@ -118,7 +120,6 @@ export default function Header(): JSX.Element {
           <Link
             href="#skills"
             onClick={(e) => {
-              scrollToSection(e, "skills");
               handleSetAltNavShowing(e);
             }}
             className="block h-full w-full"
@@ -133,6 +134,11 @@ export default function Header(): JSX.Element {
             className="block h-full w-full"
           >
             Resume
+          </Link>
+        </li>
+        <li className="border-t border-zinc-300 px-12 py-4 transition duration-200 dark:border-zinc-800">
+          <Link href="/blog" className="block h-full w-full">
+            Blog
           </Link>
         </li>
       </ul>
