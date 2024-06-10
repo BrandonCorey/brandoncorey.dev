@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 
 .project-preview {
   @apply mx-auto h-[250px] overflow-hidden rounded-xl object-cover object-center
@@ -18,4 +21,114 @@
 
 .button-primary {
   @apply  text-nowrap inline-flex h-11 items-center justify-center rounded-md border border-gray-200 bg-loaf px-6 text-sm font-medium shadow-sm transition-colors hover:bg-loafSecondary hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-loaf dark:focus-visible:ring-gray-300
+}
+
+#blog-post h1 {
+  @apply text-5xl font-bold;
+}
+
+#blog-post h2 {
+  @apply text-3xl font-bold;
+}
+
+#blog-post h3 {
+  @apply text-2xl font-bold;
+}
+
+#blog-post h4 {
+  @apply text-xl font-bold;
+}
+
+#blog-post h5 {
+  @apply text-lg font-bold;
+}
+
+#blog-post h6 {
+  @apply text-base font-bold;
+}
+
+/* Paragraphs */
+#blog-post p {
+  @apply my-4;
+}
+
+/* Links */
+#blog-post a {
+  @apply underline font-bold hover:underline;
+}
+
+/* Lists */
+#blog-post ul {
+  @apply my-4 pl-10 list-disc list-inside;
+}
+
+#blog-post ol {
+  @apply my-4 pl-10 list-decimal list-inside;
+}
+
+#blog-post li {
+  @apply my-2;
+}
+
+/* Blockquotes */
+#blog-post blockquote {
+  @apply my-4 pl-4 border-l-4 border-gray-300 text-zinc-600 dark:text-zinc-100;
+}
+
+/* Code Blocks */
+#blog-post pre {
+  @apply p-4 overflow-x-auto rounded-md;
+}
+
+#blog-post figure[data-rehype-pretty-code-figure]:has(>[data-rehype-pretty-code-title]) pre {
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+}
+
+#blog-post figcaption {
+  @apply text-sm italic text-zinc-500 dark:text-zinc-100 my-2
+}
+
+#blog-post code {
+  @apply p-1;
+  counter-reset: line;
+}
+
+#blog-post code > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+
+  display: inline-block;
+  width: 1rem;
+  margin-right: 2rem;
+  text-align: right;
+  color: gray;
+}
+
+
+/* Tables */
+#blog-post table {
+  @apply w-full border-collapse my-7;
+}
+
+#blog-post th, td {
+  @apply p-2 border border-gray-300 text-left;
+}
+
+#blog-post th {
+  @apply font-bold;
+}
+
+/* Images */
+#blog-post img {
+  @apply max-w-full h-auto;
+}
+
+/* Horizontal Rule */
+#blog-post hr {
+  @apply border-0 h-px bg-gray-300 my-8;
+}
+
+[data-rehype-pretty-code-title] {
+  @apply bg-zinc-700 p-1 rounded-t-md text-white p-2 text-sm
 }
